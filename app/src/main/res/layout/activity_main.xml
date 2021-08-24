@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_voca"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="Hello World!"
+        android:gravity="center"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/holo_blue_light"/>
+
+    <Button
+        android:id="@+id/bt_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_voca"
+        android:layout_margin="@dimen/default_size"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:text="Next"/>
+
+    <Button
+        android:id="@+id/bt_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bt_next"
+        android:layout_margin="@dimen/default_size"
+        android:backgroundTint="@android:color/holo_orange_light"
+        android:text="ADD"/>
+
+    <EditText
+        android:id="@+id/edt_voca_new"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bt_add"
+        android:layout_margin="@dimen/default_size"
+        android:gravity="center"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:hint="Vocabulary New"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/bt_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/edt_voca_new"
+        android:layout_margin="@dimen/default_size"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:text="OK"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/bt_reset_database"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/bt_ok"
+        android:layout_margin="@dimen/default_size"
+        android:backgroundTint="@android:color/tertiary_text_dark"
+        android:text="Reset Database"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
